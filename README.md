@@ -107,6 +107,7 @@ GND is the ground pin.
 
 
 ## STM 32 CUBE PROGRAM :
+```
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
@@ -443,10 +444,11 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
-
+```
 
 
 ## Output screen shots on serial monitor   :
+
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/1595180b-90ee-427e-9ad1-4c78bc857e56" />
  
  
