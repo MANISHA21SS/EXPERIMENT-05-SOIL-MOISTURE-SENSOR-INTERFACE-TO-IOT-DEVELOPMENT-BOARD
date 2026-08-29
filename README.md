@@ -132,7 +132,7 @@ GND is the ground pin.
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include"stdio.h"
+#include "stdio.h"
 #if defined(__GNUC__)
 #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
 #endif
@@ -219,33 +219,24 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  HAL_ADC_Start(&hadc);
-	  HAL_ADC_PollForConversion(&hadc,HAL_MAX_DELAY);
-	  readvalue=HAL_ADC_GetValue(&hadc);
-	  printf("Read Value:%ld\n",readvalue);
-	  uint32_t soilmoisture= 100- (readvalue/40.95);
-	  printf("Soil Moisture:%ld%%\n",soilmoisture);
-	  HAL_Delay(1000);
-
     /* USER CODE END WHILE */
-
+	  HAL_ADC_Start(&hadc);
+	  	  	  HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY);
+	  	  	  readvalue = HAL_ADC_GetValue(&hadc);
+	  	  	  printf("Read value : %ld\n", readvalue);
+	  	  	  uint32_t soilmoist = 100 - (readvalue / 40.95);
+	  	  	  printf("Soil moisture : %ld %%\n", soilmoist);
+	  	  	  HAL_Delay(1000);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
-    if (HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_4)==1)
-    {
-        printf("INTERRUPT GENERATED\n");
-    }
-}
-PUTCHAR_PROTOTYPE
-{
-HAL_UART_Transmit(&huart2,(uint8_t*)&ch,1,0xFFFF);
-return ch;
-}
 
+PUTCHAR_PROTOTYPE
+	  {
+	  	HAL_UART_Transmit(&huart2,(uint8_t*)&ch,1,0xFFFF);
+	  	return ch;
+	  }
 /**
   * @brief System Clock Configuration
   * @retval None
@@ -448,6 +439,7 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+
 ```
 
 
