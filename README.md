@@ -1,4 +1,8 @@
 # EXPERIMENT-05-SOIL-MOISTURE-SENSOR-INTERFACE-TO-IOT-DEVELOPMENT-BOARD
+## Date: 22/08/2026
+## Name: Manisha selvakumari S S
+## Reg. No.: 212223220055
+## Dept: Information Technology
 
 ## Aim: 
 
@@ -449,6 +453,13 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 ## Output screen shots on serial monitor   :
 
+<img width="1586" height="823" alt="ex5" src="https://github.com/user-attachments/assets/048ac520-288d-4911-8198-005f7519cc1a" />
+
+Before inserting sensor:
+<img width="1902" height="957" alt="image" src="https://github.com/user-attachments/assets/b10b2d9d-0849-4350-ba8d-05a347907f6a" />
+
+After inserting sensor:
+<img width="1897" height="966" alt="image" src="https://github.com/user-attachments/assets/aa7587da-a82a-49b7-95d4-10d3c54f5b80" />
 
  
  
